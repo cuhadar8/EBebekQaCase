@@ -5,7 +5,6 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.interactions.Actions;
 
 import testPages.CartPage;
 import testPages.HomePage;
@@ -16,7 +15,6 @@ import testPages.SearchPage;
 public class BaseTest {
 
 	private static WebDriver driver;
-	public Actions actions;
 	
 	
 	@Before
@@ -27,7 +25,6 @@ public class BaseTest {
 		options.addArguments("--disable-notifications");	//pencerisini doğrudan kapatmak için tanımladım ve kullandım
 		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
 		driver = new ChromeDriver(options);
-		actions = new Actions(driver);
 		
 		
 		driver.manage().window().maximize();                //Açılan pencereyi büyütmek için kullandım.
