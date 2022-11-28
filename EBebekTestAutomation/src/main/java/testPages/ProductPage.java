@@ -2,19 +2,15 @@ package testPages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-
 import org.junit.Assert;
 
 public class ProductPage {
 	
 	private WebDriver driver;
-	public Actions actions;
 	public String productName = "Mama Kaşığı 2’li Aqua Green- Mellow Yellow";
 	
 	public ProductPage(WebDriver driver){
         this.driver = driver;
-        actions = new Actions(driver);
     }
 	
 	public void checkProduct() {//Bu method ile arama sayfasında tıkladığımız ürünler, açılan ürünün aynı olup olmadığını
