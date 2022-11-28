@@ -3,18 +3,16 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
+
 
 public class LoginPage {
 	
 	private WebDriver driver;
-	public Actions actions;
 	
 	private String title = "Üyelik";
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
-		actions = new Actions(driver);
 	}
 	
 	public void checkTitle() { //Üyelik ekranının açılıp açılmadığını kontrol ettim
